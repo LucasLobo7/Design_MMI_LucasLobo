@@ -1,14 +1,24 @@
-W = 6e-6;
-We = 8.15e-6;
+W = 9e-6;
+Wtapper = 1.43e-6;
 K = 4;
+
 
 select('MMI');
 set('y span', W);
 
 select('I1');
 set('y', W/2 - W/3);
+
+select('TI1');
+set('y', W/2 - W/3);
+set('width_r',Wtapper);
+
 select('I2');
 set('y', -W/2 + W/3);
+
+select('TI2');
+set('y', -W/2 + W/3);
+set('width_r',Wtapper);
 
 for(x=1:K)
 {
@@ -17,13 +27,28 @@ for(x=1:K)
     if(mod(x,2)==1)
     {
         set('y',W/2-(W-(W/K)*(x-(1/3))));
-        select('EME::Ports::port_'+num2str(x+1));
+        select('EME::Ports::port_'+num2str(x+2));
         set('y',W/2-(W-(W/K)*(x-(1/3))));
     }
     else
     {
         set('y',W/2-(W-(W/K)*(x-(2/3))));
-        select('EME::Ports::port_'+num2str(x+1));
+        select('EME::Ports::port_'+num2str(x+2));
+        set('y',W/2-(W-(W/K)*(x-(2/3))));
+    }
+    
+    select('TO'+num2str(x));
+    set('width_r',Wtapper);
+    if(mod(x,2)==1)
+    {
+        set('y',W/2-(W-(W/K)*(x-(1/3))));
+        select('EME::Ports::port_'+num2str(x+2));
+        set('y',W/2-(W-(W/K)*(x-(1/3))));
+    }
+    else
+    {
+        set('y',W/2-(W-(W/K)*(x-(2/3))));
+        select('EME::Ports::port_'+num2str(x+2));
         set('y',W/2-(W-(W/K)*(x-(2/3))));
     }
 }
