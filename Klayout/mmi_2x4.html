@@ -1,0 +1,370 @@
+<head>
+<style>
+table, th, tr, td{
+border: 1px solid black;
+border-collapse: collapse;
+}
+tr, td{
+padding: .5%;
+}
+</style>
+}
+<body style="font-family:Tahoma;">
+<title>MMI 2X4</title>
+<H1>MMI 2X4 (SPAR)</H1>
+<div class="overview-image"><img src="symbol_mmi_2x4.png" border="1"></div>
+<P>Optical N port s-parameter element</P>
+<H2>Keywords</H2>
+<P>optical, bidirectional</P>
+<H2>Ports</H2>
+<table class="int-ports">
+<tr>
+<th width="40%">Name</th>
+<th width="60%">Type</th>
+</tr>
+<tr>
+<td>port 3</td>
+<td>Optical Signal</td>
+</tr>
+<tr>
+<td>port 5</td>
+<td>Optical Signal</td>
+</tr>
+<tr>
+<td>port 1</td>
+<td>Optical Signal</td>
+</tr>
+<tr>
+<td>port 4</td>
+<td>Optical Signal</td>
+</tr>
+<tr>
+<td>port 2</td>
+<td>Optical Signal</td>
+</tr>
+<tr>
+<td>port 6</td>
+<td>Optical Signal</td>
+</tr>
+</table>
+<H2>Properties</H2>
+<H3>General Properties</H3>
+<table class="int-properties">
+<tr>
+<th width="40%">Name</th>
+<th width="20%">Default value</th>
+<th width="20%">Default unit</th>
+<th width="20%">Range</th>
+</tr>
+<tr>
+<td><p><b>name</b></p>
+<p>Defines the name of the element.</p></td>
+<td>MMI 2X4</td>
+<td> - </td>
+<td> - </td>
+</tr>
+<tr>
+<td><p><b>annotate</b></p>
+<p>Defines whether or not to display annotations on the schematic editor.</p></td>
+<td>true</td>
+<td> - </td>
+<td>[true, false]</td>
+</tr>
+<tr>
+<td><p><b>enabled</b></p>
+<p>Defines whether or not the element is enabled.</p></td>
+<td>true</td>
+<td> - </td>
+<td>[true, false]</td>
+</tr>
+<tr>
+<td><p><b>type</b></p>
+<p>Defines the element unique type (read only).</p></td>
+<td>Optical N Port S-Parameter</td>
+<td> - </td>
+<td> - </td>
+</tr>
+<tr>
+<td><p><b>description</b></p>
+<p>A brief description of the elements functionality.</p></td>
+<td>Optical N port s-parameter element</td>
+<td> - </td>
+<td> - </td>
+</tr>
+<tr>
+<td><p><b>prefix</b></p>
+<p>Defines the element name prefix.</p></td>
+<td>SPAR</td>
+<td> - </td>
+<td> - </td>
+</tr>
+<tr>
+<td><p><b>model</b></p>
+<p>Defines the element model name.</p></td>
+<td>MMI 2X4</td>
+<td> - </td>
+<td> - </td>
+</tr>
+<tr>
+<td><p><b>library</b></p>
+<p>Defines the element location or source in the library (custom or design kit).</p></td>
+<td>::Custom</td>
+<td> - </td>
+<td> - </td>
+</tr>
+<tr>
+<td><p><b>local path</b></p>
+<p>Defines the local path or working folder &dollar;LOCAL for the element.</p></td>
+<td>/home/lucas/.config/Custom</td>
+<td> - </td>
+<td> - </td>
+</tr>
+<tr>
+<td><p><b>url</b></p>
+<p>An optional URL address pointing to the element online help.</p></td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+</tr>
+</table>
+<H3>Standard Properties</H3>
+<table class="int-properties">
+<tr>
+<th width="40%">Name</th>
+<th width="20%">Default value</th>
+<th width="20%">Default unit</th>
+<th width="20%">Range</th>
+</tr>
+<tr>
+<td><p><b>configuration</b></p>
+<p>Defines the bidirectional or unidirectional element configuration.</p></td>
+<td>bidirectional</td>
+<td> - </td>
+<td>[bidirectional, s parameters</td>
+</tr>
+<tr>
+<td><p><b>load from file</b></p>
+<p>Defines whether or not to load s-parameters from an input file or to use the currently stored s-parameters.</p></td>
+<td>true</td>
+<td> - </td>
+<td>[true, false]</td>
+</tr>
+<tr>
+<td><p><b>s parameters filename</b></p>
+<p>The file containing the s-parameters. Refer to the Implementation Details section for the format expected.</p></td>
+<td>/media/lucas/datam01/LucasLobo/Design_MMI_LucasLobo/Lumerical/INTERCONECTFINALIZADO.dat</td>
+<td> - </td>
+<td> - </td>
+</tr>
+</table>
+<H3>Thermal Properties</H3>
+<table class="int-properties">
+<tr>
+<th width="40%">Name</th>
+<th width="20%">Default value</th>
+<th width="20%">Default unit</th>
+<th width="20%">Range</th>
+</tr>
+<tr>
+<td><p><b>temperature</b></p>
+<p>Defines the temperature.</p></td>
+<td>&percnt;temperature&percnt;</td>
+<td>K</td>
+<td>(-&infin;, +&infin;)</td>
+</tr>
+</table>
+<H3>Numerical Properties</H3>
+<table class="int-properties">
+<tr>
+<th width="40%">Name</th>
+<th width="20%">Default value</th>
+<th width="20%">Default unit</th>
+<th width="20%">Range</th>
+</tr>
+<tr>
+<td><p><b>remove disconnected ports</b></p>
+<p>Defines whether or not to remove disconnected ports from the internal s-parameters.</p></td>
+<td>false</td>
+<td> - </td>
+<td>[true, false]</td>
+</tr>
+<tr>
+<td><p><b>order</b></p>
+<p>The order that the element internal s-parameters are raised to. This allows users to automatically cascade an arbitrary number of elements.</p></td>
+<td>1</td>
+<td> - </td>
+<td>[1, +&infin;)</td>
+</tr>
+<tr>
+<td><p><b>passivity</b></p>
+<p>Defines how passivity of s-parameters is enforced: 'ignore' ignores the passivity of the s-parameters. 'test' tests if the induced 2-norm of the s-parameters is less than 1. 'enforce' enforces the passivity by making sure the the induced 2-norm of the s-parameters is less than 1. 'optimal' enforces the passivity by making sure the the induced 2-norm and the Frobenius norm of the s-parameters are both less than 1.</p></td>
+<td>ignore</td>
+<td> - </td>
+<td>[ignore, test, enforce, optimal</td>
+</tr>
+<tr>
+<td><p><b>passivity tolerance</b></p>
+<p>When enforcing passivity the induced 2-norm of the s-parameters at an offending frequency will be equal to <i>1-eps</i>, where <i>eps</i> is the passivity tolerance.</p></td>
+<td>1e-006</td>
+<td> - </td>
+<td>[0, 1]</td>
+</tr>
+<tr>
+<td><p><b>reciprocity</b></p>
+<p>Defines how reciprocity of s-parameters is enforced: 'ignore' ignores the reciprocity of the s-parameters. 'test' tests for symmetry across the diagonal of the s-parameter matrix. 'enforce' enforces symmetry across the diagonal of the s-parameter matrix.</p></td>
+<td>ignore</td>
+<td> - </td>
+<td>[ignore, test, enforce</td>
+</tr>
+</table>
+<H3>Numerical/Digital Filter Properties</H3>
+<table class="int-properties">
+<tr>
+<th width="40%">Name</th>
+<th width="20%">Default value</th>
+<th width="20%">Default unit</th>
+<th width="20%">Range</th>
+</tr>
+<tr>
+<td><p><b>digital filter type</b></p>
+<p>Defines the digital filter type used to fit the element transfer function in time domain.</p></td>
+<td>FIR</td>
+<td> - </td>
+<td>[single tap, FIR, IIR</td>
+</tr>
+<tr>
+<td><p><b>number of taps estimation</b></p>
+<p>Defines the method used to estimate the number of taps of the digital filter.</p></td>
+<td>fit tolerance</td>
+<td> - </td>
+<td>[disabled, fit tolerance, group delay</td>
+</tr>
+<tr>
+<td><p><b>filter fit tolerance</b></p>
+<p>Defines the mean square error for the fitting function.</p></td>
+<td>0.05</td>
+<td> - </td>
+<td>(0, 1)</td>
+</tr>
+<tr>
+<td><p><b>filter fit number of iterations</b></p>
+<p>This determines the maximum number of iterations required before fitting reaches the tolerance error.</p></td>
+<td>50</td>
+<td> - </td>
+<td>[1, +&infin;)</td>
+</tr>
+<tr>
+<td><p><b>filter fit rolloff</b></p>
+<p>Defines the frequency roll off for the fitting function.</p></td>
+<td>0.05</td>
+<td> - </td>
+<td>[0, 1)</td>
+</tr>
+<tr>
+<td><p><b>window function</b></p>
+<p>Defines the window type for the digital filter.</p></td>
+<td>rectangular</td>
+<td> - </td>
+<td>[rectangular, hamming, hanning</td>
+</tr>
+<tr>
+<td><p><b>number of fir taps</b></p>
+<p>Defines the number of coefficients for digital filter.</p></td>
+<td>256</td>
+<td> - </td>
+<td>[1, +&infin;)</td>
+</tr>
+<tr>
+<td><p><b>maximum number of fir taps</b></p>
+<p>Defines the number of coefficients for digital filter.</p></td>
+<td>4096</td>
+<td> - </td>
+<td>[1, +&infin;)</td>
+</tr>
+<tr>
+<td><p><b>number of iir taps</b></p>
+<p>Defines the number of coefficients for digital filter.</p></td>
+<td>4</td>
+<td> - </td>
+<td>[2, +&infin;)</td>
+</tr>
+<tr>
+<td><p><b>maximum number of iir taps</b></p>
+<p>Defines the number of coefficients for digital filter.</p></td>
+<td>20</td>
+<td> - </td>
+<td>[2, +&infin;)</td>
+</tr>
+<tr>
+<td><p><b>initialize filter taps</b></p>
+<p>Defines whether to use the initial input signal to initialize filter state values or to set them to zero values.</p></td>
+<td>false</td>
+<td> - </td>
+<td>[true, false]</td>
+</tr>
+<tr>
+<td><p><b>fractional delay</b></p>
+<p>Defines whether to use a fractional delay filter or force the delay to be an integer multiple of the sample period.</p></td>
+<td>true</td>
+<td> - </td>
+<td>[true, false]</td>
+</tr>
+<tr>
+<td><p><b>delay compensation</b></p>
+<p>The number of delays to compensate for latency.</p></td>
+<td>0</td>
+<td> - </td>
+<td>[0, +&infin;)</td>
+</tr>
+</table>
+<H3>Diagnostic Properties</H3>
+<table class="int-properties">
+<tr>
+<th width="40%">Name</th>
+<th width="20%">Default value</th>
+<th width="20%">Default unit</th>
+<th width="20%">Range</th>
+</tr>
+<tr>
+<td><p><b>run diagnostic</b></p>
+<p>Enables the frequency response of the designed filter implementation and the ideal frequency response to be generated as results.</p></td>
+<td>false</td>
+<td> - </td>
+<td>[true, false]</td>
+</tr>
+<tr>
+<td><p><b>diagnostic size</b></p>
+<p>The number of frequency points used when calculating the filter frequency response.</p></td>
+<td>1024</td>
+<td> - </td>
+<td>[2, +&infin;)</td>
+</tr>
+</table>
+<H2>Results</H2>
+<table class="int-results">
+<tr>
+<th width="40%">Name</th>
+<th width="60%">Description</th>
+</tr>
+<tr>
+<td>diagnostic/response #/transmission</td>
+<td>The complex transmission vs. frequency corresponding to the ideal and designed filter.</td>
+</tr>
+<tr>
+<td>diagnostic/response #/gain</td>
+<td>The gain vs. frequency corresponding to the ideal and designed filter.</td>
+</tr>
+<tr>
+<td>diagnostic/response #/error</td>
+<td>Mean square error comparing the frequency response of the designed filter implementation with the ideal frequency response.</td>
+</tr>
+<tr>
+<td>diagnostic/passivity</td>
+<td>The induced 2-norm or the spectral norm of the s-parameters vs. frequency.</td>
+</tr>
+<tr>
+<td>diagnostic/reciprocity</td>
+<td>The induced 2-norm or the spectral norm of <i>(S-S')</i> vs. frequency, where <i>S</i> is the s-parameters matrix.</td>
+</tr>
+</table>
+</body>
